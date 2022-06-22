@@ -25,7 +25,7 @@ class IssuesImport implements ToModel
            //'attachment'         => $row[4], 
            'building_number'    => $row[4],
            'apartment_number'   => $row[5],
-           'user_id'            => Auth::user()->id, 
+           'user_id'            => Auth::user()->id,
         ]);
 
     }

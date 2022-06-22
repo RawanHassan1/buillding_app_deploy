@@ -177,6 +177,8 @@ return [
 
         Maatwebsite\Excel\ExcelServiceProvider::class,
 
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+
     ],
 
     /*
@@ -230,6 +232,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
 
     ],
 

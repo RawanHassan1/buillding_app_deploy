@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Controllers\Controller;
+Use Alert;
 
 
 class IssuesController extends Controller
@@ -53,6 +54,10 @@ class IssuesController extends Controller
     {
         Excel::import(new IssuesImport, $request->excelFile);
         
-        return "Data imported successfully";
+        //return "Data imported successfully";
+
+        Alert::success('Data Imported Successfully', 'Success Message');
+
+        return back();
     }
 }
